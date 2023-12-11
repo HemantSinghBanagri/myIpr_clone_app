@@ -1,0 +1,139 @@
+ 
+.main-container-certificate {
+   
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    padding: 20px 20px 0px 20px;
+    overflow-y: hidden;
+    
+   
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  
+    p {
+      color: #555;
+      font-size: 16px;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+      background-color: white;
+      thead{
+        
+        color: #555;
+      
+        
+      }
+      
+  
+      th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+  
+      th {
+        background-color: #f2f2f2;
+      }
+  
+      td {
+        button {
+          cursor: pointer;
+          padding: 8px;
+          margin-right: 8px;
+          border: none;
+          border-radius: 4px;
+          background-color: #007bff;
+          color: #fff;
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+    }
+  }
+  
+  .filename{
+    color: #118586;
+  }
+  tr:hover{
+    background-color: rgb(122, 227, 228);
+    
+
+  }
+
+svg{
+    fill: #555;
+}
+
+option{
+    color: #555;
+}
+
+
+.input-search{
+  position: relative;
+  svg{
+    position: absolute;
+    
+    top: 5px;
+    margin: 0px 5px;
+    fill:#6c6969;
+    
+    
+  }
+  input{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 8px;
+
+    
+  }
+  
+  
+}
+
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  align-items: center;
+
+  .page-info {
+    span {
+      color: #555;
+      font-size: 14px;
+    }
+  }
+
+  .page-numbers {
+    span {
+      cursor: pointer;
+      padding: 8px;
+      margin-right: 4px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+
+      &.active {
+        background-color: #007bff;
+        color: #fff;
+      }
+
+      &:hover {
+        background-color: #f2f2f2;
+      }
+    }
+  }
+}
+.blurbagruond{
+  filter: blur(2px);
+}

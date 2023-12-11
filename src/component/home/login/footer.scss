@@ -1,0 +1,51 @@
+.outer{
+    position: absolute;
+    bottom: 4em;
+    right: 1em;
+    cursor: pointer;
+
+    .button_container{
+
+        .button_wrap{
+            border: none;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius:8px ;
+            span{
+
+                font-weight: 400;
+                font-size: 20px;
+                color: rgb(47, 46, 46);
+                img{
+                    width: 20px;
+                    height: 20px;
+                    padding-left: 5px;
+                }
+
+            }
+            
+
+        }
+    }
+}
+
+.message{
+    margin: 5px;
+    padding: 20px;
+    border-radius:50% ;
+    background-color:#01a09b;
+    
+    
+    svg{
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        color: white;
+        
+        
+    }
+    svg:hover{
+        color: red;
+    }
+
+}

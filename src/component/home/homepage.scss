@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap'); 
+
+
+.outer-container-login{
+    display: flex;
+    width: 100%;
+    .side-container{
+        position: fixed;
+        background-image: url("https://qa-myipr.p2eppl.com/static/media/sidebar.109d47a6c585553fa6c8.png"); 
+        background-repeat: round;
+        width: 40%;
+        height: 100vh;
+
+
+
+
+        a{
+
+
+           
+            color: #118586;
+            text-decoration: none !important;
+            .ui-scanner{
+                width: 25%;
+                cursor: pointer;
+                margin: 4%;
+                // outline: rgb(34, 116, 107) solid 1px !important;
+                
+            }
+    
+        }
+
+
+
+
+        .heading-container{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 5%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            
+            
+            
+        
+            .custom-heading{
+                color: white;
+                font-size: 40px;
+                
+                align-items: center;
+               
+                
+                font-family: Poppins,serif;
+               
+                
+                strong{
+                    font-weight: bolder;
+                }
+
+            }
+
+
+            .custom-suheading{
+                color: #e9e5e4;
+                display: flex;
+                font-weight: 400;
+                font-size: 24px;
+                font-family: Poppins,serif;
+                display: flex;
+                align-items: center;
+                
+
+            }
+        }
+    }
+
+  
+    
+
+    
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2610px){ 
+    .ui-scanner { 
+      align-self: flex-start;
+    } 
+  } 
+  @media only screen and (min-width: 1441px) and (max-width: 2610px){ 
+    .heading-container { 
+      display: flex; 
+      flex-direction: column; 
+      padding: 5%;
+    } 
+  }  
+
+  a:hover{
+
+    color: #0a58ca; 
+     
+
+  }
+
+
+
+
+  .outlet-container-login{
+    height: 100vh;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    width: 60%;
+  }
+
+  .login-container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .myipr-logo{
+    display: none;
+    left: 50%;
+    max-width: 200px;
+    position: 200px;
+    position: absolute;
+    top: 0;
+    transform: translate(-51%);
+    width: 60%;
+    vertical-align: middle;
+  }
+  .cont-login{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+  }
+
+  .heading{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0;
+  }
+  .link1{
+    color: #716a79;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 28px;
+    margin: 0;
+    span{
+      cursor: pointer;
+      a{@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+        .outer-container-login {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+        
+          .side-container {
+            display: flex;
+            flex-direction: column;
+            background-image: url("https://qa-myipr.p2eppl.com/static/media/sidebar.109d47a6c585553fa6c8.png");
+            background-repeat: round;
+            width: 100%;
+            height: 100vh;
+            order: 2; // Move side-container to the bottom in mobile view
+        
+            a {
+              color: #118586;
+              text-decoration: none !important;
+        
+              .ui-scanner {
+                width: 25%;
+                cursor: pointer;
+                margin: 4%;
+              }
+            }
+        
+            .heading-container {
+              display: flex;
+              flex-direction: column;
+              gap: 24px;
+              padding: 5%;
+              position: relative;
+        
+              .custom-heading {
+                color: white;
+                font-size: 40px;
+                font-family: 'Poppins', serif;
+        
+                strong {
+                  font-weight: bolder;
+                }
+              }
+        
+              .custom-suheading {
+                color: #e9e5e4;
+                font-weight: 400;
+                font-size: 24px;
+                font-family: 'Poppins', serif;
+                align-items: center;
+              }
+            }
+          }
+        
+          .outlet-container-login {
+            height: 100vh;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            width: 100%; // Full width for mobile view
+            order: 1; // Move outlet-container-login to the top in mobile view
+          }
+        
+          .login-container {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+          }
+        
+          .myipr-logo {
+            display: none;
+            max-width: 200px;
+            position: absolute;
+            top: 0;
+            transform: translate(-50%);
+            width: 60%;
+            vertical-align: middle;
+          }
+        
+          .cont-login {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 80%; // Adjusted width for mobile view
+          }
+        
+          .heading {
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 48px;
+            margin: 0;
+          }
+        
+          .link1 {
+            color: #716a79;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            line-height: 28px;
+            margin: 0;
+        
+            span {
+              cursor: pointer;
+        
+              a {
+                color: #118586 !important;
+                text-decoration: none !important;
+              }
+            }
+          }
+        
+          @media only screen and (min-width: 1441px) and (max-width: 2610px) {
+            .ui-scanner {
+              align-self: flex-start;
+            }
+        
+            .heading-container {
+              display: flex;
+              flex-direction: column;
+              padding: 5%;
+            }
+          }
+        
+          a:hover {
+            color: #0a58ca;
+          }
+        }
+        
+        color: #118586 !important;
+        text-decoration: none !important;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .side-container {
+      display: none;
+    }
+  
+    .outlet-container-login {
+      width: 100%;
+  
+      .login-container {
+        .myipr-logo {
+          display:block;
+          max-width: 200px;
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 60%;
+          
+        }
+  
+        .cont-login {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          width: 80%; 
+        }
+  
+        .heading {
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 48px;
+          margin: 0;
+        }
+  
+        .link1 {
+          color: #716a79;
+          font-size: 16px;
+          font-weight: 500;
+          font-style: normal;
+          line-height: 28px;
+          margin: 0;
+  
+          span {
+            cursor: pointer;
+  
+            a {
+              color: #118586 !important;
+              text-decoration: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  

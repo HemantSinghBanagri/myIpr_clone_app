@@ -1,0 +1,21 @@
+[debug] [2023-11-26T10:37:25.245Z] ----------------------------------------------------------------------
+[debug] [2023-11-26T10:37:25.247Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Win 10\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-11-26T10:37:25.248Z] CLI Version:   12.9.1
+[debug] [2023-11-26T10:37:25.248Z] Platform:      win32
+[debug] [2023-11-26T10:37:25.248Z] Node Version:  v18.18.2
+[debug] [2023-11-26T10:37:25.249Z] Time:          Sun Nov 26 2023 16:07:25 GMT+0530 (India Standard Time)
+[debug] [2023-11-26T10:37:25.249Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-11-26T10:37:25.258Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-11-26T10:37:25.259Z] > authorizing via signed-in user (hemant2307sb@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Win 10\Desktop\myIpr_clone\myipr
+

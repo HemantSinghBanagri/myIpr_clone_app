@@ -1,0 +1,336 @@
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 100%;
+  
+    .header-container {
+      flex: 0 1;
+      .header-wrapper {
+        align-items: center;
+        background: #fff;
+        border-bottom: 1px solid #f3f2f4;
+        display: flex;
+        height: 80px;
+        justify-content: space-between;
+        padding: 0 2%;
+        position: fixed;
+        width: 100vw;
+        z-index: 999;
+  
+        .ham-wapper {
+          a {
+            color: #118586 !important;
+            text-decoration: none;
+            .myiprimage {
+              cursor: pointer;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+    }
+  
+    .side_component {
+      align-items: center;
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+      width: max-content;
+  
+      .credit-wrap {
+        align-items: center;
+        border: 1px solid #f78105;
+        width: 150px;
+        border-radius: 8px;
+        color: #1b1b1b;
+        cursor: pointer;
+        display: flex;
+        font-size: 16px;
+        font-weight: 400;
+        gap: 10px;
+        padding: 3% 5%;
+        white-space: border-box;
+  
+        img {
+          height: auto;
+          width: 20px;
+          vertical-align: middle;
+          overflow-clip-margin: content-box;
+        }
+      }
+  
+      .notificaiton {
+        cursor: pointer;
+        position: relative;
+  
+        svg {
+          vertical-align: middle;
+          fill: #727272;
+        }
+      }
+  
+      .profile-dropdown {
+        align-items: center;
+        display: flex;
+        gap: 10%;
+        justify-content: center;
+  
+        .differnet {
+          border-left: 1px solid #f3f2f4;
+          min-height: 40px;
+          width: 1px;
+        }
+  
+        .dropdown {
+          position: relative;
+  
+          .dropdown-toggle {
+            align-items: center;
+            background-color: transparent !important;
+            border: none;
+            display: flex;
+            white-space: nowrap;
+            padding-bottom: 30px;
+  
+            .avater {
+              background-color: #76bd90;
+              border-radius: 50%;
+              font-weight: 600;
+              padding: 10px;
+  
+              color: #fff;
+  
+              svg {
+                margin-left: 10px;
+                fill: #1b1b1b;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    inset: 58px -14px auto auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px;
+  }
+  
+  .outlet-container {
+    width: 100%;
+    max-width: 85%;
+    margin-top: 70px;
+    padding: 10px 10px 0 10px;
+    background-color: #fff;
+    height: 100vh;
+    margin-left: 15%;
+  }
+  
+  .drop-svg {
+    color: #1b1b1b;
+  }
+  
+  .main-home-container {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 40vh;
+    padding: 20px 20px 0px 20px;
+    overflow-y: hidden;
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+  }
+  
+  .create-certificate {
+    background: #e9e9e9;
+    border-radius: 12px;
+    color: #1b1b1b;
+    margin-top: 24px;
+    padding: 40px;
+    height: 50vh;
+  }
+  
+  .su-create-certificate {
+    color: #747572;
+    font-size: 16px;
+    font-size: 400;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 20px;
+    h5 {
+      padding: 20px 0 0 0;
+    }
+    p {
+      padding: 20px 0 0 0;
+    }
+  }
+  
+  .verify-para {
+    color: #757472;
+    font-size: 14px;
+    font-size: 400;
+    text-align: center;
+  }
+  
+  .row-class {
+    padding: 20px 0 0 0;
+    svg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 20%;
+    }
+  }
+  
+  .create-button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -180px;
+  }
+  
+  .button-wrapper-home {
+    display: inline-block;
+    button {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      background-color: #02aaa5;
+      align-items: center;
+      border-radius: 8px;
+      padding: 12px 16px;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  .main-home-container {
+    h2 {
+      font-size: 30px;
+    }
+  }
+  
+  .create-certificate {
+    h4 {
+      font-size: 20px;
+    }
+  }
+  
+  .verify-heading {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .sidebar {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 80%;
+      height: 100%;
+      background-color: #fff;
+      z-index: 1000;
+      overflow-x: hidden;
+      transition: 0.5s;
+    }
+  
+    .sidebar a {
+      padding: 15px;
+      text-decoration: none;
+      font-size: 18px;
+      color: #111;
+      display: block;
+      transition: 0.3s;
+    }
+  
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+  
+    .sidebar .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 30px;
+      cursor: pointer;
+    }
+  
+    .credit-wrap {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .hamburger-menu {
+      display: none;
+    }
+  
+    .navbar-visible {
+      display: none;
+    }
+  
+    .navbar-hidden {
+      display: block;
+    }
+  }
+  
+  .certificate-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 30px 10px 40px;
+  }
+  
+  .certificate-card {
+    width: 260px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 4px;
+    overflow: hidden;
+    
+  }
+  
+  .certificate-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .certificate-card p {
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+    text-align: left;
+    font-weight: 600;
+  }
+  .certificate-card span{
+    color: gray;
+  }
+  
+  .certificate-outlet {
+    height: 400px;
+    overflow-y: scroll;
+  }
+  .certificate-card h4{
+    color: #1bff07;
+    background-color: rgb(171, 255, 171);
+    font-weight: 200;
+    width:30% ;
+    padding-left:5px ;
+    border-radius: 8px;
+
+  }

@@ -1,0 +1,84 @@
+.dropdown-menu{
+    width:calc(100vw - 80vw) ;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    .first-child{
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 8%;
+        p{
+            align-items: center;
+            border-radius: 8px;
+            gap: 4px;
+            
+           
+
+        }
+    }
+
+    .second-child{
+        align-items: left;
+        padding: 2%;
+        
+        p{
+            display: flex;
+            align-items: center;
+            
+            padding: 10px 0px;
+            vertical-align: middle;
+            font-size: 20px;
+            svg{
+                fill: #716a71;
+                stroke: white;
+                margin-top: 10px
+                
+                
+                
+            }
+            button{
+               display: flex;
+                padding: 10px;
+                border: none;
+                background-color: white;
+                font-size: 20px;
+                color: black;
+                
+                
+            }
+        }
+    }
+}
+
+
+
+.Log-Out{
+   
+   
+   fill:rgb(227, 68, 68)!important;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    padding: 2px;
+   
+
+}
+
+.logout-dropdown-functon{
+    padding: 10px;
+    border: none;
+    background-color: #118586;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8px;
+    transition: background-color 0.3s ease;
+  }
+
+ 
+
+  .logout-dropdown-functon:hover {
+    background-color: #0a58ca;
+  }

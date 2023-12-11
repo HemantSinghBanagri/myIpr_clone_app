@@ -1,0 +1,45 @@
+.logout-container {
+    position: absolute;
+    right: 500px;
+    top: 250px;
+    // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    // border: 1px solid ;
+    padding: 16px;
+    background-color: white;
+    border-radius: 8px;
+    z-index: 1000;
+    width: 500%;
+  
+    span {
+      font-size: 18px;
+      font-weight: bold;
+      color: red;
+    }
+  
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+  
+    button {
+      padding: 10px;
+      border: none;
+      background-color: #118586;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 4px;
+      margin-right: 8px;
+      transition: background-color 0.3s ease;
+    }
+  
+    button.cancel-btn {
+      background-color: #ddd;
+      color: #333;
+    }
+  
+    button:hover {
+      background-color: #0a58ca;
+    }
+  }
+  
