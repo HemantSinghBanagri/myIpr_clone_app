@@ -10,7 +10,7 @@ import RequestTransfer from '../RequestTransfer/RequestTransfer';
 
 import Dropdown from '../home/home/dropdown';
 import Sidebar from '../home/home/sidebar/Sidebar';
-import TransferRequests from '../TransferRequest/TransferRequest';
+// import TransferRequests from '../TransferRequest/TransferRequest';
 
 
 const MainRequest = () => {

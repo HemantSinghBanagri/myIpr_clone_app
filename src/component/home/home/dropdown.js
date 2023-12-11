@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React  from 'react'
 import { UserAuth } from '../../../context/authcontext';
 import "./dropdown.scss"
 import SettingsIcon from '@mui/icons-material/Settings';
-import LogoutIcon from '@mui/icons-material/Logout';
-import LogOutDropdown from './LogOutDropdown';
+// import LogoutIcon from '@mui/icons-material/Logout';
+// import LogOutDropdown from './LogOutDropdown';
 import { IoLogOut } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
 const Dropdown = () => {

@@ -10,7 +10,7 @@ import Sidebar from './sidebar/Sidebar';
 import ContactEmergencyIcon from '@mui/icons-material/ContactEmergency';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
-import { firestore,collection,getDocs, doc,query,where } from '../../../firebase/firebase';
+import { firestore,collection,getDocs,query,where } from '../../../firebase/firebase';
 import BrokenImageOutlinedIcon from '@mui/icons-material/BrokenImageOutlined';
 import { UserAuth } from '../../../context/authcontext';
 
@@ -39,7 +39,7 @@ const Home = () => {
       setCertificates(certificateData)
     }
     fetchCettificates()
-  },[])
+  },[user])
   
 
 

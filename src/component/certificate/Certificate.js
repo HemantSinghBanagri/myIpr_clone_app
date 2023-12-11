@@ -19,7 +19,7 @@ const CertificatesTable = ({ creatorID }) => {
   const [totalItems, setTotalItems] = useState(0);
   const [selectedCertificateDetails, setSelectedCertificateDetails] = useState(null);
   const dropdownRef=useRef(null)
-
+  console.log(setItemsPerPage)
   const transferDropDownhandler = (item) => {
     setSelectedCertificateDetails(item)
     setIsTransfer(!isOpentransfer);
@@ -81,7 +81,7 @@ const CertificatesTable = ({ creatorID }) => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = certificates.slice(indexOfFirstItem, indexOfLastItem);
+  // const currentItems = certificates.slice(indexOfFirstItem, indexOfLastItem);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 

@@ -15,7 +15,7 @@ const TransferRequests = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(5);
 
-
+console.log(setItemsPerPage)
   useEffect(() => {
     if (user) {
       const transferRequestsCollection = collection(firestore, 'transferRequests');
@@ -63,7 +63,7 @@ const TransferRequests = () => {
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = transferRequests.slice(indexOfFirstItem, indexOfLastItem);
+  // const currentItems = transferRequests.slice(indexOfFirstItem, indexOfLastItem);
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
   // const getRequestStatusClassName = (status) => {

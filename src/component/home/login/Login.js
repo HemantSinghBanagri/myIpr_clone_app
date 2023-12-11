@@ -22,7 +22,7 @@ const Login = () => {
     try {
       setLoading(true);
 
-      const { uid, token } = await loginUser(email, password);
+      const { token } = await loginUser(email, password);
 
       Cookies.set('jwt', token, { secure: true, sameSite: 'None', httpOnly: true });
       navigate('/home');

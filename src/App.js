@@ -9,12 +9,12 @@ import { AuthContextProvider } from './context/authcontext';
 import MainCertificate from './component/certificate/Maincertificate';
 import MainRequest from './component/request/mainRequest';
 import RequiredAuth from './component/requiredAuth';
-import MainreceiverTransfer from './component/receivedTransferRequest/MainreceiverTransfer';
-import PrivateRoute from './component/PrivateRouting';
+// import MainreceiverTransfer from './component/receivedTransferRequest/MainreceiverTransfer';
+// import PrivateRoute from './component/PrivateRouting';
 import { Helmet } from 'react-helmet';
-import TransferRequestForm from './component/request/Request';
+// import TransferRequestForm from './component/request/Request';
 import TransferRequests from './component/TransferRequest/TransferRequest';
-import RequestTransferWrapper from './component/RequestTransfer/RequestTransfer';
+// import RequestTransferWrapper from './component/RequestTransfer/RequestTransfer';
 import ReceiveTransferRequest from './component/receivedTransferRequest/ReceiveTransferRequest';
 
 

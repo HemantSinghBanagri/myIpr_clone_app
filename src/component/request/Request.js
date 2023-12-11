@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { firestore } from '../../firebase/firebase';
 import { collection, addDoc, where, query, getDocs } from 'firebase/firestore';
-import TransferRequests from '../TransferRequest/TransferRequest';
+// import TransferRequests from '../TransferRequest/TransferRequest';
 import { UserAuth } from '../../context/authcontext';
 import './request.scss';
 
 const TransferRequestForm = ({selectedCertificateDetails,cnaclehandler}) => {
   const [certificates, setCertificates] = useState([]);
   const [recipientEmail, setRecipientEmail] = useState('');
-  const [selectedCertificate, setSelectedCertificate] = useState('');
+  // const [selectedCertificate, setSelectedCertificate] = useState('');
  
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const { user } = UserAuth();
-
+console.log(certificates)
   useEffect(() => {
     const fetchData = async () => {
       try {
