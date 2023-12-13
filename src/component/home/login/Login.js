@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
 import "./login.scss";
 import Footer from './footer_logo';
+import RotateLeftIcon from '@mui/icons-material/RotateLeft';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -16,13 +17,14 @@ const Login = () => {
 
   const { loginUser } = UserAuth();
 
+
   const handleLogin = async (e) => {
     e.preventDefault();
 
     try {
       setLoading(true);
 
-      const { token } = await loginUser(email, password);
+      const {  token } = await loginUser(email, password);
 
       Cookies.set('jwt', token, { secure: true, sameSite: 'None', httpOnly: true });
       navigate('/home');
@@ -78,7 +80,7 @@ const Login = () => {
 
         <div className='button-wrapper'>
           <button type="submit" className='main1 second-color' disabled={loading}>
-            {loading ? 'Logging in...' : 'Login'}
+            {loading ? <RotateLeftIcon className='spinner'/> : 'Login'}
           </button>
         </div>
       </form>

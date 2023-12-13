@@ -3,18 +3,22 @@ import React from 'react'
 
 import { useState } from 'react'
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
-import "../home/home/home.scss"
+import "../../home/home/home.scss"
 
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import RequestTransfer from '../RequestTransfer/RequestTransfer';
-
-import Dropdown from '../home/home/dropdown';
-import Sidebar from '../home/home/sidebar/Sidebar';
 
 
+import Dropdown from '../../home/home/dropdown';
+import Sidebar from '../../home/home/sidebar/Sidebar';
 
-const MainRequest = () => {
+
+import CertificateDetails from './CertificateDetails';
+
+
+
+const MainCertificateDetails = () => {
     const [isOpen,setIsopen]=useState(false)
+    const [credit]=useState(10)
   
 
     const dropdownhandler=()=>(
@@ -61,7 +65,7 @@ const MainRequest = () => {
                   <div className='credit-wrap'>
   
       <img src="https://qa-myipr.p2eppl.com/static/media/creditIcon.ae7e1015bdf1a8dd8aff.webp" alt="coin"></img>
-      <span>Credits: 0</span>
+      <span>Credits: {credit}</span>
                   </div>
   
   
@@ -112,14 +116,16 @@ const MainRequest = () => {
         
         
       </div>
-      {/* <Certificate/> */}
+      
       
   
       <div className='main-body'>
-      <Sidebar/>
+      <Sidebar credit={credit}/>
       <div className='outlet-container'>
-      {/* <TransferRequests  /> */}
-      <RequestTransfer/>
+  
+      {/* <RequestTransfer/> */}
+      
+      <CertificateDetails/>
         
         
       </div>
@@ -137,4 +143,4 @@ const MainRequest = () => {
     )
   }
 
-export default MainRequest
+export default MainCertificateDetails

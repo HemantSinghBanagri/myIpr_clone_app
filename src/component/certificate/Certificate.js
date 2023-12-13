@@ -7,6 +7,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import TransferRequestForm from '../request/Request';
 import SearchIcon from '@mui/icons-material/Search';
 
+
 const CertificatesTable = ({ creatorID }) => {
   const [certificates, setCertificates] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -15,20 +16,25 @@ const CertificatesTable = ({ creatorID }) => {
   const [isOpentransfer, setIsTransfer] = useState(false);
   const [issearch, setIsSearch] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(5); 
+  const [itemsPerPage] = useState(5); 
   const [totalItems, setTotalItems] = useState(0);
   const [selectedCertificateDetails, setSelectedCertificateDetails] = useState(null);
   const dropdownRef=useRef(null)
-  console.log(setItemsPerPage)
+
+
+
+
+
+
   const transferDropDownhandler = (item) => {
     setSelectedCertificateDetails(item)
     setIsTransfer(!isOpentransfer);
 
   };
-  // const cnaclehandler=(item)=>{
-  //   item.stopPropagation()
-  //   setIsTransfer(!isOpentransfer)
-  // }
+  const cnaclehandler=(item)=>{
+    item.stopPropagation()
+    setIsTransfer(!isOpentransfer)
+  }
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -125,6 +131,7 @@ const CertificatesTable = ({ creatorID }) => {
     .filter((item) => {
       return issearch.toLowerCase() === '' ? item : item.filename.toLowerCase().includes(issearch);
     })
+    
     .slice(indexOfFirstItem,indexOfLastItem)
     .map((item) => (
       <tr key={item.id}>
@@ -149,7 +156,7 @@ const CertificatesTable = ({ creatorID }) => {
               <span>
                 Showing {indexOfFirstItem + 1} to{' '}
                 {Math.min(indexOfLastItem, totalItems)} from {totalItems} items
-              </span>
+              </span> 
             </div>
             <div className='page-numbers'>
               {Array.from({ length: Math.ceil(totalItems / itemsPerPage) }, (_, i) => i + 1).map(
@@ -170,7 +177,7 @@ const CertificatesTable = ({ creatorID }) => {
       
     </div>
     <div className='transferfrom-container'>
-      {isOpentransfer && <TransferRequestForm selectedCertificateDetails={selectedCertificateDetails} />}
+      {isOpentransfer && <TransferRequestForm selectedCertificateDetails={selectedCertificateDetails} cnaclehandler={cnaclehandler}/>}
       </div>
       </>
   );

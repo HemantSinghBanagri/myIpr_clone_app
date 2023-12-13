@@ -1,10 +1,10 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import "./slideItem.scss"
-// import { useLocation } from 'react-router-dom'
+
 
 const SlideItem = ({id,svg,name,link}) => {
-  // const location=useLocation()
+ 
   return (
     <>
     <div className='active-link-nav'>

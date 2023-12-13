@@ -1,0 +1,108 @@
+.main-container-certificate{
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 20px 20px 0px 20px;
+  overflow-y: hidden;
+  
+
+}
+
+.certificate-details-container {
+    max-width: 90vw;
+    margin: 0 auto;
+  
+  
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    .certificate-details-content {
+      display: flex;
+      margin-right: 20px;
+  
+      .left-side {
+        
+        width: 40vw;
+        img {
+          max-width: 100%;
+          height: auto;
+          padding: 20px 0 20px 0;
+        }
+      }
+  
+      .right-side {
+        margin-left: 10%;
+        
+        padding: 20px;
+        width: 60vw;
+  
+        p {
+          font-size: 24px;
+          margin-bottom: 10px;
+  
+          strong {
+            margin-right: 15px;
+          }
+        }
+      }
+    }
+  }
+  .certificate-button-details{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    button{
+      margin:20px;
+    }
+  }
+
+  .complete-certifiate{
+    color: #1bff07;
+    background-color: rgb(171, 255, 171);
+    font-weight: 200;
+    width:30% ;
+    padding-left:5px ;
+    border-radius: 8px;
+    margin-top: 80px;
+  }
+
+  .delete-button{
+    display: flex;
+    
+    
+   
+    span{
+      padding-top: 5px;
+      
+    }
+  }
+  .download-button{
+    display: flex;
+    
+    
+   
+    span{
+      padding-top: 5px;
+      padding-left: 5px;
+      
+    }
+
+  }
+  .certificate-pathname{
+    display: flex;
+    margin-bottom: 20px;
+    svg{
+      padding-top: 10px;
+      width: 40px;
+     
+    }
+  }
+ .left-side-certificate-detail{
+  margin-bottom: 40px;
+ }
+ .certificate-detail-border{
+ border-bottom: 1px solid gray;
+ }

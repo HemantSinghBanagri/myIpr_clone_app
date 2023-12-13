@@ -243,7 +243,7 @@
       background-color: #fff;
       z-index: 1000;
       overflow-x: hidden;
-      transition: 0.5s;
+      transition: 0.8s;
     }
   
     .sidebar a {
@@ -267,24 +267,22 @@
       cursor: pointer;
     }
   
-    .credit-wrap {
+    .credit-wrap{
       display: none;
+      border: none;
+      img{
+        
+
+        display: none !important;
+      }
+      span{
+        display: none;
+      }
+
     }
   }
   
-  @media only screen and (min-width: 768px) {
-    .hamburger-menu {
-      display: none;
-    }
-  
-    .navbar-visible {
-      display: none;
-    }
-  
-    .navbar-hidden {
-      display: block;
-    }
-  }
+ 
   
   .certificate-cards {
     display: grid;
@@ -334,3 +332,7 @@
     border-radius: 8px;
 
   }
+
+  // .menu{
+  //   display: none;
+  // }  

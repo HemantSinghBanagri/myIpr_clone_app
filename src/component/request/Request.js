@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { firestore } from '../../firebase/firebase';
 import { collection, addDoc, where, query, getDocs } from 'firebase/firestore';
-// import TransferRequests from '../TransferRequest/TransferRequest';
+
 import { UserAuth } from '../../context/authcontext';
+
 import './request.scss';
+
 
 const TransferRequestForm = ({selectedCertificateDetails,cnaclehandler}) => {
   const [certificates, setCertificates] = useState([]);
   const [recipientEmail, setRecipientEmail] = useState('');
   // const [selectedCertificate, setSelectedCertificate] = useState('');
+  console.log(certificates)
  
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const { user } = UserAuth();
-console.log(certificates)
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -42,6 +45,8 @@ console.log(certificates)
     fetchData();
   }, [user]);
 
+
+    
   const handleTransferRequest = async (e) => {
     e.preventDefault();
 
@@ -55,8 +60,8 @@ console.log(certificates)
         recipient: recipientEmail,
         status: 'pending',
       });
-
-      alert('Transfer request submitted successfully!',onclick={cnaclehandler});
+      // <AlertMessage message='sucesuflly'/>
+      alert('Transfer request submitted successfully!');
     } catch (error) {
       console.error('Error submitting transfer request:', error);
       alert('Error submitting transfer request.');
@@ -64,7 +69,9 @@ console.log(certificates)
   };
 
   return (
-    <div className='transfer-container'>
+    <>
+   
+    <div className='transfer-container' >
       <h2>Transfer Request Form</h2>
       {loading && <p>Loading certificates...</p>}
       {error && <p style={{ color: 'red' }}>{error}</p>}
@@ -84,10 +91,11 @@ console.log(certificates)
             />
           </label>
           <br />
-          <button type='submit'>Submit Transfer Request</button>
+          <button className="submit" type='submit' disabled={loading}>Submit Transfer Request</button>
         </form>
       )}
     </div>
+    </>
   );
 };
 

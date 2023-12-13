@@ -7,11 +7,11 @@ import SmsIcon from '@mui/icons-material/Sms';
 import "./slidebar.scss"
 import InfoIcon from '@mui/icons-material/Info';
 import { Link } from 'react-router-dom';
-// import MarkAsUnreadIcon from '@mui/icons-material/MarkAsUnread';
 
 
 
-const Sidebar = () => {
+
+const Sidebar = ({credit}) => {
  
 
   let slidedata=[
@@ -53,7 +53,7 @@ const Sidebar = () => {
           <div className='bottom-wrap'>
             <div className='balance-wrap'>
               <img src='https://dev-myipr.p2eppl.com/static/media/creditIcon.ae7e1015bdf1a8dd8aff.webp' alt="coin" width="20" height="20"></img>
-              <span>Credits:0</span>
+              <span>Credits:{credit}</span>
             </div>
             <Link to="/help" >
               <div className='help-support'>

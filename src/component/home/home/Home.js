@@ -14,18 +14,41 @@ import { firestore,collection,getDocs,query,where } from '../../../firebase/fire
 import BrokenImageOutlinedIcon from '@mui/icons-material/BrokenImageOutlined';
 import { UserAuth } from '../../../context/authcontext';
 
+import { useNavigate } from 'react-router-dom';
+
+
+
 const Home = () => {
   
   const [isOpen,setIsopen]=useState(false)
   const [certificates,setCertificates]=useState([])
   const { user } = UserAuth();
+  // const [selectedCertificateDetails,setSelectedCertificateDetails]=useState(null)
+  const [credit]=useState(10)
+
+  // const [issidebaropen,setIssidebarOpen]=useState(false)
+
+
+  const navigate = useNavigate();
+
+  const navigationHandler = () => {
+    navigate('/adding_certificate');
+  };
 
   const dropdownhandler=()=>(
     setIsopen(!isOpen)
 
   )
+ 
 
-  
+
+  const clickcertificateHandler = (certificate) => {
+    localStorage.setItem('certificateDetails', JSON.stringify(certificate));
+    navigate('/CertificateDetails');
+  };
+  // const sidebarHandler=()=>{
+  //   setIssidebarOpen(!issidebaropen)
+  // }
 
   useEffect(()=>{
     const fetchCettificates=async()=>{
@@ -57,7 +80,7 @@ const Home = () => {
 
 
 
-    
+      {/* <MenuIcon onClick={sidebarHandler} className='menu'/> */}
       <div className='header-wrapper'>
       
           <div className='ham-wapper'>
@@ -78,7 +101,7 @@ const Home = () => {
                 <div className='credit-wrap'>
 
     <img src="https://qa-myipr.p2eppl.com/static/media/creditIcon.ae7e1015bdf1a8dd8aff.webp" alt="coin"></img>
-    <span>Credits: 0</span>
+    <span>Credits: {credit}</span>
                 </div>
 
 
@@ -132,7 +155,8 @@ const Home = () => {
     
 
     <div className='main-body'>
-    <Sidebar/>
+   {/* {issidebaropen &&  <Sidebar className="sidebar"/>} */}
+   <Sidebar credit={credit}/>
     
     <div className='outlet-container'>
     <div className='main-home-container'>
@@ -177,7 +201,7 @@ you have a certificate to prove it.
         </div>
         <div className='create-button'>
         <div className='button-wrapper-home'>
-          <button className='main-button-home' type='button'>Certificate</button>
+          <button onClick={navigationHandler}   className='main-button-home' >Certificate</button>
         </div>
 
         </div>
@@ -192,7 +216,7 @@ you have a certificate to prove it.
     <div className='certificate-cards'>
                 {certificates.map((certificate) => (
 
-                  <div key={certificate.id} className='certificate-card'>
+                  <div key={certificate.id} className='certificate-card' onClick={()=>clickcertificateHandler(certificate)}>
                   <p>{certificate.filename}</p>
                   {certificate.image ? (
         <img src={certificate.image} alt={certificate.filename} />

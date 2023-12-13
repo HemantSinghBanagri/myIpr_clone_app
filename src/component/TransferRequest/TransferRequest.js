@@ -13,9 +13,9 @@ const TransferRequests = () => {
   const { user } = UserAuth();
   const [isSearch, setIsSearch] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(5);
+  const [itemsPerPage] = useState(5);
 
-console.log(setItemsPerPage)
+
   useEffect(() => {
     if (user) {
       const transferRequestsCollection = collection(firestore, 'transferRequests');

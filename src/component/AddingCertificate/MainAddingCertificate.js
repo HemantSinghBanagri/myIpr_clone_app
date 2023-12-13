@@ -6,14 +6,16 @@ import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import "../home/home/home.scss"
 
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import RequestTransfer from '../RequestTransfer/RequestTransfer';
+
 
 import Dropdown from '../home/home/dropdown';
 import Sidebar from '../home/home/sidebar/Sidebar';
+import AddingCertificate from './AddingCertificate';
+// import { Add } from '@mui/icons-material';
 
 
 
-const MainRequest = () => {
+const MainAddingCertificate = () => {
     const [isOpen,setIsopen]=useState(false)
   
 
@@ -112,14 +114,15 @@ const MainRequest = () => {
         
         
       </div>
-      {/* <Certificate/> */}
+      
       
   
       <div className='main-body'>
       <Sidebar/>
       <div className='outlet-container'>
-      {/* <TransferRequests  /> */}
-      <RequestTransfer/>
+  
+      {/* <RequestTransfer/> */}
+      <AddingCertificate/>
         
         
       </div>
@@ -137,4 +140,4 @@ const MainRequest = () => {
     )
   }
 
-export default MainRequest
+export default MainAddingCertificate
